@@ -145,7 +145,7 @@ void drawlootloop()
 
 			uintptr_t ItemLevel = read<uintptr_t>( ItemLevels + (i * sizeof(uintptr_t)));
 
-			for (int i = 0; i < read<DWORD>( ItemLevel + (0x98 + sizeof(PVOID))); ++i) {
+			for (int i = 0; i < read<DWORD>( ItemLevel + (0x98 + sizeof(PVOID))); ++i) {//may be outdated
 
 
 				uintptr_t ItemsPawns = read<uintptr_t>( ItemLevel + 0x98);
